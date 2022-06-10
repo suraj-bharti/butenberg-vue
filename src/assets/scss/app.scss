@@ -1,0 +1,111 @@
+@font-face {
+	font-family: 'Montserat-Regular';
+	src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+	font-family: 'Montserat-SemiBold';
+	src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+// ================ Custom styles ===================
+* {
+	padding: 0;
+	margin: 0;
+}
+
+*, ::after, ::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url(../img/Pattern.svg) no-repeat #F8F7FF;
+	font-family: 'Montserat-Regular', sans-serif;
+	font-size: 16px;
+}
+h1 {
+	font-family: 'Montserat-SemiBold';
+	font-size: 48px;
+	color: $blue;
+	margin: 20px 0;
+}
+h2 {
+	font-family: 'Montserat-SemiBold';
+	font-size: 30px;
+}
+.blue {color: $blue;}
+.cp {
+	cursor: pointer;
+}
+.rectangle {
+	width: 114px;
+    height: 162px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px 0 rgb(211 209 238 / 50%);
+    display: inline-table;
+}
+.text-center {
+	text-align: center;
+}
+.boxed {
+	margin: 5%;
+}
+.b {
+	font-weight: bold;
+}
+.p0 {
+	padding: 0;
+}
+.m0 {
+	margin: 0;
+}
+.float-right {
+	float: right;
+}
+.w100 {
+	width: 100%;
+}
+
+// ======= RESPONSIVE GRID ========
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -12px;
+	margin-left: -12px;
+}
+.col-md-2,
+.col-6 {
+	position: relative;
+	width: 100%;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.col-6 {
+	position: relative;
+	width: 100%;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+.col-md-2 {
+	position: relative;
+	width: 33%;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+@media (min-width: 768px) {
+	.col-md-2 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 16.66667%;
+		flex: 0 0 16.66667%;
+		max-width: 16.66667%;
+	}
+	.col-6 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
